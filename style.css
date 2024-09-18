@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(35deg, #fa7100, #bc0091);
+}
+
+.card-block {
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.card-block:hover .card-item {
+  transform: scale(0.9);
+  filter: blur(10px);
+  opacity: 0.4;
+}
+.card-block .card-item {
+  position: relative;
+  width: 200px;
+  height: 270px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.card-block .card-item:hover {
+  transform: scale(1.1);
+  filter: blur(0);
+  opacity: 1;
+}
+.card-block .card-item::before {
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: -25px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--color);
+}
+.card-block .card-item .number {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 60px;
+  padding: 20px 0;
+  z-index: 2;
+}
+.card-block .card-item .text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  padding: 0 10px;
+  text-align: center;
+}
+.card-block .card-item .btn {
+  display: block;
+  border: none;
+  outline: none;
+  background-color: var(--color);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 10px auto;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
